@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.websnoox.tappTablet.MainActivity$PlaceholderFragment" >
+
+    <include
+        android:id="@+id/topActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_action_bar" />
+
+    <LinearLayout
+        android:id="@+id/topDrBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topActionBar"
+        android:visibility="gone" >
+
+        <include layout="@layout/data_report_upper_part" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framebase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topDrBar"
+        android:background="@color/backgroundBAse" >
+
+        <FrameLayout
+            android:id="@+id/base_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundBAse" >
+        </FrameLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_orderRelatedButtons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_confirmbuttons_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" >
+
+        <include
+            android:id="@+id/bottom_layout_OrderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/order_view_bottom_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/transparent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_popUpBackground"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/linear_statusConfirmation"
+            android:layout_width="@dimen/popup_order_ready_width"
+            android:layout_height="@dimen/popup_order_ready_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/popup_order_ready_marginTop"
+            android:background="@drawable/rounded_square"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

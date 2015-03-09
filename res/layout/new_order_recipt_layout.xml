@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_OrderReciptLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relative_mainOrderReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/orderReceipt_topheader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/orderReceipt_topHeder_height"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/topViewOrderReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/rounded_rectangle_view_darkgrey_orderrecipt" />
+
+            <RelativeLayout
+                android:id="@+id/relative_upperPart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_upperHeight"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                android:background="@color/grey" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="28/01/2015 09:20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/childscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relative_bottom"
+            android:layout_below="@+id/orderReceipt_topheader" >
+
+            <RelativeLayout
+                android:id="@+id/childerelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/relative_paidUnpaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_paidUnpaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                        android:text="UNPAID"
+                        android:textColor="@color/red"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_topdottedLine"
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_paidUnpaid"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                        android:singleLine="true"
+                        android:text="-----------------------------------------------------------------------------" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_orderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/relative_paidUnpaid"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="Order No. 6789"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     android:layout_below="@+id/relative_paidUnpaid"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="Delivery"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/tv_CutsomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_orderID"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="Mr. Abc 0789467644"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/tv_customeradress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_CutsomerName"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="60 Silver St, Doncaster"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/tv_customerDebitCardNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_customeradress"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="Debit Card ********* 88989"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/tv_dottedLine"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_customerDebitCardNo"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:singleLine="true"
+                    android:text="-----------------------------------------------------------------------------" />
+
+                <TextView
+                    android:id="@+id/tv_deliveryTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dottedLine"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="DELIVERY TIME 15/01/2015 09:20"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/tv_dottedLine2"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_deliveryTime"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:singleLine="true"
+                    android:text="-----------------------------------------------------------------------------" />
+
+                <LinearLayout
+                    android:id="@+id/linear_orderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/tv_dottedLine2"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_dottedLine3"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_orderDetail"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:singleLine="true"
+                    android:text="---------------------------------------------------------------------------" />
+
+                <TextView
+                    android:id="@+id/staticItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_dottedLine3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="Item: "
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dottedLine3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:layout_toRightOf="@+id/staticItemText"
+                    android:text="5 "
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/StaticTextVoucherNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/staticItemText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="Voucher No."
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/staticItemText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:layout_toRightOf="@+id/StaticTextVoucherNo"
+                    android:text="OHD1234 "
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/subTotalValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_dottedLine3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="5 "
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/staticSubtotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dottedLine3"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:layout_toLeftOf="@+id/subTotalValue"
+                    android:text="Sub Total: "
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/tv_valueDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/staticSubtotalText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:text="-10 % "
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+                <TextView
+                    android:id="@+id/StaticTextDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/staticSubtotalText"
+                    android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                    android:layout_toLeftOf="@+id/tv_valueDiscount"
+                    android:text="Discount:"
+                    android:textSize="@dimen/largetextsize_OrderReceipt" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relative_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/orderReceipt_marginTop" >
+
+            <View
+                android:id="@+id/viewBottom"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/accept_linear"
+                android:layout_width="@dimen/accept_width"
+                android:layout_height="@dimen/accept_height"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/viewBottom"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                android:background="@drawable/acept_button_selector"
+                android:gravity="center"
+                android:text="Accept"
+                android:textColor="@color/accept_reject_text_selector"
+                android:textSize="@dimen/largetextsize_OrderReceipt" />
+
+            <TextView
+                android:id="@+id/reject_linear"
+                android:layout_width="@dimen/accept_width"
+                android:layout_height="@dimen/accept_height"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/viewBottom"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="@dimen/orderReceipt_marginTop"
+                android:background="@drawable/acept_button_selector"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/accept_reject_text_selector"
+                android:textSize="@dimen/largetextsize_OrderReceipt" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/transparentwhite_orderReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_transparent_white"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+</RelativeLayout>

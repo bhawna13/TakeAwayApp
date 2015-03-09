@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dr_listview_height"
+        android:background="@color/grey_dr_background" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvName_drItemised"
+            style="@style/dr_listview_style"
+            android:text="@string/time_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvQuantity_drItemised"
+            style="@style/dr_listview_style"
+            android:text="@string/orderno_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvAmount_drItemised"
+            style="@style/dr_listview_style"
+            android:text="@string/vat_string" />
+    </LinearLayout>
+
+</LinearLayout>

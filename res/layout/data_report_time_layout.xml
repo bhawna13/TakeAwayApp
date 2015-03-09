@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_timerUperPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/green_dr_text" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:text="@string/select_time_string"
+            android:textColor="@color/green_dr_text"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/green_dr_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_timerMiddlePart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_bottomtimer"
+        android:layout_below="@+id/ll_timerUperPart" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/startHour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/startMin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_wheel_focus_height"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:background="@drawable/dr_wheel_focus" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/green_dr_text"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="@string/to_string"
+            android:textColor="@color/green_dr_text"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/endHour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/endMin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_wheel_focus_height"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:background="@drawable/dr_wheel_focus" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/green_dr_text"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_bottomtimer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/ll_timerBottomPart"
+        android:background="@color/green_dr_text" />
+
+    <RelativeLayout
+        android:id="@+id/ll_timerBottomPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/txtokTime"
+            style="@style/dr_button_time_bottom_style"
+            android:text="@string/ok_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/txtCancelTime"
+            style="@style/dr_button_time_bottom_style"
+            android:layout_toRightOf="@+id/txtokTime"
+            android:text="@string/cancel_string" />
+    </RelativeLayout>
+
+</RelativeLayout>

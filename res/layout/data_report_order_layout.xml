@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:id="@+id/rel_UpperPart1OR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_dr_tab"
+        android:padding="10dp" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_QuantityOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_OrderNoOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dr_QuantityOR"
+            android:paddingLeft="20dp"
+            android:text="Order No. 12345"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="21/01/2015 10:59"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_UpperPar2OR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_UpperPart1OR"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_CustomerDetailOR1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:text="Mr. ABC    07954051111 "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_CustomerDetailOR2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dr_CustomerDetailOR1"
+            android:padding="5dp"
+            android:text="59 Silver Street, Doncaster. DN1 1JL"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_DeliveryTimeOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dr_CardNoOR"
+            android:padding="5dp"
+            android:text="DELIVERY TIME: 21/02/2015 11:40"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_CardNoOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dr_CustomerDetailOR2"
+            android:layout_alignLeft="@+id/dr_DeliveryTimeOR"
+            android:padding="5dp"
+            android:text="Card xxxx xxxx xxxx xxx2"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_OR"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_bottomOR1"
+        android:layout_below="@+id/rel_UpperPar2OR" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottomOR1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_bottomOR2"
+        android:padding="5dp" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_itemOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Item: 2"
+            android:textSize="20sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_VoucherOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/dr_itemOR"
+            android:paddingLeft="20dp"
+            android:text="Voucher no."
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottomOR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_SubTotalOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Sub Total:  £10.50"
+            android:textSize="20sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_DiscountOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/dr_SubTotalOR"
+            android:text="Discount:"
+            android:textSize="20sp" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_TotalOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/dr_DiscountOR"
+            android:text="Total:  £10.50"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

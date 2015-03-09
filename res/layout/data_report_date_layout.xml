@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_timerUperPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/green_dr_text" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:text="@string/select_Date_string"
+            android:textColor="@color/green_dr_text"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/green_dr_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_timerMiddlePart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_bottomtimer"
+        android:layout_below="@+id/ll_timerUperPart" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/startMonths"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/startDays"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_wheel_focus_height"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:background="@drawable/dr_wheel_focus" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/green_dr_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="@string/to_string"
+            android:textColor="@color/green_dr_text"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/endMonths"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <in.websnoox.tappTablet.dataReport.wheel.WheelVerticalView
+                    android:id="@+id/endDays"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_wheel_focus_height"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:background="@drawable/dr_wheel_focus" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/green_dr_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_bottomtimer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/ll_timerBottomPart"
+        android:background="@color/green_dr_text" />
+
+    <LinearLayout
+        android:id="@+id/ll_timerBottomPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="240dp" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_button_style"
+            android:text="@string/ok_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_button_style"
+            android:text="@string/cancel_string" />
+    </LinearLayout>
+
+</RelativeLayout>

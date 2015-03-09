@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dr_search_margin_top"
+        android:layout_marginLeft="@dimen/dr_search_margin_left"
+        android:layout_marginRight="@dimen/dr_search_margin_left"
+        android:layout_marginTop="@dimen/dr_search_margin_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <in.websnoox.tappTablet.ui.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_search_text_height"
+                android:gravity="center_vertical"
+                android:text="@string/start_from"
+                android:textSize="20sp" />
+
+            <in.websnoox.tappTablet.ui.CustomTextView
+                android:id="@+id/startDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_search_text_height"
+                android:gravity="center"
+                android:text="@string/dr_default_date_string"
+                android:textSize="20sp" />
+
+            <in.websnoox.tappTablet.ui.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_search_text_height"
+                android:gravity="center_vertical"
+                android:text="@string/end_date"
+                android:textSize="20sp" />
+
+            <in.websnoox.tappTablet.ui.CustomTextView
+                android:id="@+id/endDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dr_search_text_height"
+                android:gravity="center"
+                android:text="@string/dr_default_date_string"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendar1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dr_search_text_height"
+            android:layout_weight="1.5"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

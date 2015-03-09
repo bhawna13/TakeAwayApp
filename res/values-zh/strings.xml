@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+     <!-- dataReport Fragment -->
+    <string name="today_string">今天</string>
+    <string name="search_string">搜索</string>
+    <string name="control_panel_string">控制面板</string>
+    <string name="dr_back_string">背部</string>
+    <string name="dr_Print_string">打印</string>
+    <string name="dr_Delete_string">删除</string>
+    <string name="dr_Export_string">出口</string>
+    
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pos="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_view02"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:ignore="SelectableText,HardcodedText,InvalidId" >
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+        android:id="@+id/SelectDrop"
+        style="@style/dr_dropdown_txt_style"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="skldfhsadjlf"
+       />
+
+</LinearLayout>

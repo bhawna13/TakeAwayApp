@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_square_calculator"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_tomalAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Total"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalAmountTobePaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="86"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtCalcCashier"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="18dp"
+                android:textSize="24sp"
+                android:focusable="false"
+                android:layout_below="@+id/tv_tomalAmt"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:background="@drawable/rounded_rectangle_white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" >
+
+        <TableLayout
+            android:id="@+id/tableCashier"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText"
+            android:layout_margin="10dp" >
+            
+            <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/key7"
+            style="@style/calculator_Style"
+            android:tag="7"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/key8"
+            style="@style/calculator_Style"
+            android:tag="8"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/key9"
+            style="@style/calculator_Style"
+            android:tag="9"
+            android:text="9" />
+
+        
+
+        <TextView
+            android:id="@+id/keyDelete"
+            style="@style/calculator_Style"
+            android:tag="Cash"
+            android:text="Cash" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" >
+
+        <TextView
+            android:id="@+id/key4"
+            style="@style/calculator_Style"
+            android:tag="4"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/key5"
+            style="@style/calculator_Style"
+            android:tag="5"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/key6"
+            style="@style/calculator_Style"
+            android:tag="6"
+            android:text="6" />
+
+      
+
+        <TextView
+            android:id="@+id/keyReset"
+            style="@style/calculator_Style"
+            android:tag="Card"
+            android:text="Card" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" >
+
+        <TextView
+            android:id="@+id/key1"
+            style="@style/calculator_Style"
+            android:tag="1"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/key2"
+            style="@style/calculator_Style"
+            android:tag="2"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/key3"
+            style="@style/calculator_Style"
+            android:tag="3"
+            android:text="3" />
+
+        
+
+        <TextView
+            android:id="@+id/keyEqual"
+            style="@style/calculator_Style"
+            android:tag="Ok"
+            android:text="OK" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" >
+
+        <TextView
+            android:id="@+id/keyDecimal"
+            style="@style/calculator_Style"
+            android:tag="."
+            android:text="." />
+
+        <TextView
+            android:id="@+id/key0"
+            style="@style/calculator_Style"
+            android:tag="0"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/keyBlank"
+            style="@style/calculator_Style"
+           
+            android:tag=""
+            android:text="" />
+
+        
+
+        <TextView
+            android:id="@+id/keyblank"
+            style="@style/calculator_Style"
+            android:tag="Cancel"
+            android:text="CANCEL" />
+    </TableRow>
+        </TableLayout>
+    </LinearLayout>
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        </LinearLayout>
+</LinearLayout>

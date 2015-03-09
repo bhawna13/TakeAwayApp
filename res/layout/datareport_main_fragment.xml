@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,ContentDescription,UselessParent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout style="@style/dr_tab_style" >
+
+            <RelativeLayout
+                android:id="@+id/relToday"
+                style="@style/data_report_tabs_style"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/imgToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="40dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/calender_2" />
+
+                <in.websnoox.tappTablet.ui.CustomTextView
+                    android:id="@+id/txtTodayDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgToday"
+                    android:layout_alignLeft="@+id/imgToday"
+                    android:layout_alignRight="@+id/imgToday"
+                    android:layout_alignTop="@+id/imgToday"
+                    android:alpha="0.5"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="20dp"
+                    android:text="12 Feb"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/data_report_tabs_text_style"
+                android:layout_below="@+id/relToday"
+                android:text="@string/today_string" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/dr_tab_style" >
+
+            <RelativeLayout
+                android:id="@+id/relSearch"
+                style="@style/data_report_tabs_style"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="40dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/search_1" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/data_report_tabs_text_style"
+                android:layout_below="@+id/relSearch"
+                android:text="@string/search_string" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/dr_tab_style" >
+
+            <RelativeLayout
+                android:id="@+id/relControlPanel"
+                style="@style/data_report_tabs_style"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/imgControlPanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="40dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/keyboard_1" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/data_report_tabs_text_style"
+                android:layout_below="@+id/relControlPanel"
+                android:text="@string/control_panel_string" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

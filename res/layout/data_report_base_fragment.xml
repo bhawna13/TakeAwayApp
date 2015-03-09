@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/topDrBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <include layout="@layout/data_report_upper_part" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_report_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topDrBar"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_dr_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dr_upper_par_height"
+            android:background="@color/grey_dr_background" >
+
+            <in.websnoox.tappTablet.ui.CustomTextView
+                android:id="@+id/txtTime_dr"
+                style="@style/dr_button_style"
+                android:layout_weight="2"
+                android:text="@string/dr_default_time_string" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <in.websnoox.tappTablet.ui.CustomTextView
+                android:id="@+id/txtItemsCount"
+                style="@style/dr_button_time_style"
+                android:layout_weight="1" />
+
+            <in.websnoox.tappTablet.ui.CustomTextView
+                android:id="@+id/txtItemTotal"
+                style="@style/dr_button_time_style"
+                android:layout_weight="1.5" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/include_listview_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_dr_header"
+            layout="@layout/data_report_header_layout" />
+
+        <in.websnoox.tappTablet.ui.CustomListView
+            android:id="@+id/listView_dr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include_listview_header" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_dr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topDrBar"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

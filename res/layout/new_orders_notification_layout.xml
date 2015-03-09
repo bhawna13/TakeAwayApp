@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/notification_listItem_height"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relative_newOrderItemsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/img_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           
+            android:layout_marginLeft="40dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_timerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+             android:src="@drawable/clock"
+            android:layout_toRightOf="@+id/img_radioButton"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/orderTimelistViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img_timerView"
+            android:text="09:15"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/orderIDlistViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/orderTimelistViewItem"
+            android:text="09:15"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/CutomerNamelistViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/orderIDlistViewItem"
+            android:text="09:15"
+            android:textSize="20sp" />
+        
+         <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+           
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

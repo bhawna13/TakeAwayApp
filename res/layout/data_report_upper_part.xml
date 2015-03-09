@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_dr_topBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dr_upper_par_height"
+    android:orientation="horizontal"
+    tools:ignore="InefficientWeight" 
+    android:background="@color/white">
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+        android:id="@+id/dr_back"
+        style="@style/dr_button_style"
+        android:text="@string/dr_back_string" />
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+        android:id="@+id/dr_print"
+        style="@style/dr_button_style"
+        android:text="@string/dr_Print_string" />
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+         android:id="@+id/dr_delete"
+        style="@style/dr_button_style"
+        android:text="@string/dr_Delete_string" />
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+          android:id="@+id/dr_export"
+        style="@style/dr_button_style"
+        android:text="@string/dr_Export_string" />
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+        android:id="@+id/txt_SearchTime_dr"
+        style="@style/dr_button_style"
+        android:layout_weight="1.5"
+        android:drawableRight="@drawable/dr_spinner_image_selector"
+        android:paddingRight="25dp"
+        android:text="@string/dr_default_search_date_string"
+        android:visibility="gone" />
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+        android:id="@+id/txt_defaultTime_dr"
+        style="@style/dr_button_time_style"
+        android:text="@string/dr_default_date_string"
+        android:visibility="visible" />
+
+    <in.websnoox.tappTablet.ui.CustomTextView
+        android:id="@+id/dr_spinner"
+        style="@style/dr_button_style"
+        android:layout_weight="1.5"
+        android:drawableRight="@drawable/dr_spinner_image_selector"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:text="@string/dr_all_string" />
+
+</LinearLayout>

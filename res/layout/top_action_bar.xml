@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_actionbar_height"
+    android:background="@color/signup_divider"
+    android:orientation="horizontal"
+    tools:ignore="ObsoleteLayoutParam,UselessParent,ContentDescription,UseCompoundDrawables,HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_actionbar_height" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+
+            <LinearLayout
+                android:id="@+id/home_topActionBAr"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:background="@color/dark_grey"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/hone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notification_topActionBAr"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/home_topActionBAr"
+                android:background="@color/dark_grey"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whisle" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/notification_topActionBAr"
+                android:gravity="center_vertical"
+                android:text="Hi, Michella"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mainMEnu_topHEdare_textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_topActionBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/username"
+                android:gravity="center_vertical"
+                android:text="28/01/2015 09.20"
+                android:textColor="@color/white"
+                 android:textSize="@dimen/mainMEnu_topHEdare_textsize"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+
+            <LinearLayout
+                android:id="@+id/logout_topActionBAr"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:background="@color/dark_grey"
+                android:gravity="center" 
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logout" />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log Out"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_versionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/logout_topActionBAr"
+                android:gravity="center_vertical"
+                android:text="Version 1.9"
+                android:textColor="@color/white"
+                 android:textSize="@dimen/mainMEnu_topHEdare_textsize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/logout_topActionBAr"
+                android:gravity="center_vertical"
+                android:src="@drawable/boxes" 
+                 android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/img_searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@+id/img_gridView"
+                android:gravity="center_vertical"
+                android:src="@drawable/search" 
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

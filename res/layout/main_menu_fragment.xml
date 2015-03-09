@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/takeAwayOrdersMainMEnu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight=".5"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_takeAway_mainMenu"
+                    android:layout_width="@dimen/mainmenu_button_width"
+                    android:layout_height="@dimen/mainmenu_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/mainmenu_purple_square"
+                    android:padding="30dp"
+                    android:src="@drawable/main_menu_purple_imageselector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_takeAway_mainMenu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Takeaway"
+                    android:textSize="@dimen/mainmenu_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight=".5"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_takeAway_mainMenu"
+                    android:layout_width="@dimen/mainmenu_button_width"
+                    android:layout_height="@dimen/mainmenu_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/mainmenu_blue_square"
+                    android:padding="20dp"
+                    android:src="@drawable/history_opacity" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_takeAway_mainMenu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="History"
+                    android:textSize="@dimen/mainmenu_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/takeAwayDataReportMainMEnu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight=".5"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_dataReport_mainMenu"
+                    android:layout_width="@dimen/mainmenu_button_width"
+                    android:layout_height="@dimen/mainmenu_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/mainmenu_green_square"
+                    android:padding="20dp"
+                    android:src="@drawable/data_report_opacity" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_dataReport_mainMenu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Data Report"
+                    android:textSize="@dimen/mainmenu_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight=".5"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_takeAway_mainMenu"
+                    android:layout_width="@dimen/mainmenu_button_width"
+                    android:layout_height="@dimen/mainmenu_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/mainmenu_yellow_square"
+                    android:padding="20dp"
+                    android:src="@drawable/settings_opacity" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_takeAway_mainMenu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Setting"
+                    android:textSize="@dimen/mainmenu_textsize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+</LinearLayout>

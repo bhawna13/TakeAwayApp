@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="top_header">#91989D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparentwhite">#80FFFFFF</color>
+    <color name="register_disable_color">#6E6E70</color>
+    <color name="register_press_color">#67CAD5</color>
+    <color name="txt_color_forgetpassword_press">#2ea7e0</color>
+    <color name="txt_color_forgetpassword_normal">#595757</color>
+    <color name="signup_divider">#7b7d7c</color>
+    <color name="black">#000000</color>
+    <color name="grey">#7b7d7c</color>
+    <color name="dark_grey">#333333</color>
+    <color name="light_gray">#dcdddd</color>
+    <color name="transparent_black">#8000001a</color>
+    <color name="manage_row_deselect">#EFEFEF</color>
+    <color name="manage_row_select">#B5B6B6</color>
+    <color name="item_add_on_background_internal">#dcdddd</color>
+    <!-- <color name="take_order_list_background">#1c2024</color> -->
+
+    <color name="take_order_list_background">#383D40</color>
+    <color name="cashierpricecolor">#4c4e4c</color>
+    <color name="cashierquantitycolor">#231815</color>
+    <color name="blackshade">#34373A</color>
+    <color name="scrollbarcolor">#2F9DD0</color>
+    <color name="cashierpopupbackground">#4BA0DD</color>
+    <color name="txt_yellow">#FA8700</color>
+    <color name="txt_blue">#0C7AAC</color>
+    <color name="txt_red">#FF2738</color>
+
+    <!-- Order Color -->
+    <color name="order_product_row_tap_color">#85c2df</color>
+    <color name="table_num_back_stroke">#898989</color>
+    <color name="order_product_list_divider">#898989</color>
+    <color name="item_add_on_background">#645957</color>
+    <color name="item_add_on_indicator">#2ea7e0</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Data report -->
+    <color name="data_report_deselect">#EFEFEF</color>
+    <color name="data_report_upper_color">#323538</color>
+    <color name="dataReportHeadColor">#221815</color>
+    <color name="data_report_select">#B5B6B6</color>
+    <color name="data_report_popup_table_hdr">#585657</color>
+
+    <!-- Printer color -->
+    <color name="PrinterListRowColor">#9FA0A0</color>
+
+    <!-- Print Receipt -->
+    <color name="printReceiptDeactivateColor">#C9CACA</color>
+    <color name="printReceiptactivateColor">#B5B6B6</color>
+    <color name="printReceiptPopupDeactive">#2F3336</color>
+
+    <!-- Cashier -->
+    <color name="red">#ffcc0000</color>
+    <color name="darkred">#800000</color>
+
+    <!-- For indicator -->
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <color name="Menu_divider_COlor">#c5c5c5</color>
+    <color name="gray">#C4C4C4</color>
+    <color name="blue">#2B90C8</color>
+
+    <!-- TApp Colours -->
+    <color name="purple_topHeader_mainMEnu"> #AA66CC</color>
+    <color name="purple_topHeader_individual"> #9D86B7</color>
+    <color name="purple_OrderStatus_unselected">#5F1885</color>
+    <color name="purple_OrderStatus_selected">#AE88CC</color>
+    <color name="lightBlue_singleClick"> #00FFFF</color>
+    <color name="backgroundBAse"> #F7F7F7</color>
+    <color name="horizontalBackBase"> #F7F7F7</color>
+    <color name="grey_topHeader_mainMEnu">#454D56</color>
+    <color name="grey_topHeader_individual">#303944</color>
+    <color name="transparentGrey">#0E0F11</color>
+    <color name="greySelected_listItem">#9E9E9F</color>
+    <color name="greyLight_listItem">#F8F8F8</color>
+    <color name="greyForButton">#9C9D9E</color>
+    <color name="greyForPopupBack">#E9EBEE</color>
+    <color name="mainMenu_purple"> #AA66CC</color>
+    <color name="mainMenu_blue">#92C5DC</color>
+    <color name="mainMenu_green">#6FB45A</color>
+    <color name="mainMenu_yellow">#FFBA33</color>
+    <color name="darkPurple"> #5F1885</color>
+    <color name="blue_dark_whell">#172986</color>
+    <color name="yellow_selectDeliveryTime"> #F0E219</color>
+    <color name="transparent_popUpBackground"> #80323232</color>
+    <color name="transparent_calculatorBackground">#888888</color>
+    <color name="calculatorBackground">#F3F3F3</color>
+    <color name="registerButton_backgroundcolor">#33B5E4</color>
+    <color name="forgotButton_backgroundcolor">#454D56</color>
+    <color name="loginButton_backgroundcolor">#E67638</color>
+    <color name="loginScreen_backgroundcolor">#E1E0DF</color>
+    <color name="loginButtonSelected_backgroundcolor">#FFBA33</color>
+    <color name="registerButtonUnselected_backgroundcolor">#2164C6</color>
+    <color name="splashScreen_largeTextColor">#706F70</color>
+    <color name="splashScreen_smallTextColor">#585656</color>
+    
+      <!-- dataReport Fragment -->
+    <color name="green_dr_tab">#6FB45A</color>
+    <color name="text_grey">#706F70</color>
+    <color name="green_dr_text">#70B467</color>
+    <color name="green_dr_text_border">#9DC991</color>
+    <color name="grey_dr_background">#EFEFEF</color>
+    <color name="white_dr_background">#FFFFFF</color>
+    <color name="green_dr_dropdown_background">#009139</color>
+    <color name="green_dull_dr_text">#B8DAAD</color>
+    <color name="white_semi_transparent">#80FFFFFF</color>
+    <color name="blue_txt_clor">#0371CD</color>
+    <color name="yellow_listview_selector">#FFF000</color>
+    <color name="light_grey">#F8F8F8</color>
+
+    <!-- dataReport Calender -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+    
+
+</resources>

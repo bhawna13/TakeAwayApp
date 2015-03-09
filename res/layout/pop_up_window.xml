@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PopUpView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="InvalidId" >
+
+    <ListView
+        android:id="@+DropDownList/dropDownList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dr_dropdown_layout_background"
+        android:divider="@color/green_dr_text"
+        android:dividerHeight="1dp" 
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_dr_PaymentType_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:background="@color/grey_dr_background"
+        android:visibility="gone" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_PTCard"
+            style="@style/dr_paymentTypeTabs_style"
+            android:text="@string/card_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_PTCash"
+            style="@style/dr_paymentTypeTabs_style"
+            android:text="@string/cash_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_PTPaypal"
+            style="@style/dr_paymentTypeTabs_style"
+            android:text="@string/paypal_string" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dr_OrderType_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:background="@color/grey_dr_background"
+        android:visibility="gone" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_OTDelivery"
+            style="@style/dr_paymentTypeTabs_style"
+            android:text="@string/delivery_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/dr_OTCollection"
+            style="@style/dr_paymentTypeTabs_style"
+            android:text="@string/collection_string" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dr_all_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dr_listview_header_height"
+        android:background="@color/grey_dr_background"
+        android:visibility="visible" >
+        
+          <in.websnoox.tappTablet.ui.CustomTextView
+              android:id="@+id/dr_TimeHeader"
+              android:layout_weight="0.5"
+            style="@style/dr_listview_Headear_style"
+            android:visibility="gone"
+             />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/time_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/orderno_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/vat_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/amount_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/payment_type_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/status_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/order_type_string" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dr_itemised_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dr_listview_header_height"
+        android:background="@color/grey_dr_background"
+        android:visibility="gone" >
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/dish_name_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/quantity_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            style="@style/dr_listview_Headear_style"
+            android:text="@string/amount_string" />
+    </LinearLayout>
+
+</LinearLayout>

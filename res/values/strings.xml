@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TApp_Android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    
+    <!-- dataReport Fragment -->
+    <string name="today_string">Today</string>
+    <string name="search_string">Search</string>
+    <string name="control_panel_string">Control Panel</string>
+    <string name="dr_back_string">Back</string>
+    <string name="dr_Print_string">Print</string>
+    <string name="dr_Delete_string">Delete</string>
+    <string name="dr_Export_string">Export</string>
+    <string name="dr_default_search_date_string">01/ 01/ 15 - 05/ 02/ 15</string>
+    <string name="dr_default_date_string">10/ 02/ 2015</string>
+    <string name="dr_all_string">All</string>
+    <string name="dr_default_time_string">09:00 - 11:20</string>
+    <string name="time_string">Time</string>
+    <string name="orderno_string">OrderNo.</string>
+    <string name="vat_string">Vat</string>
+    <string name="amount_string">Amount(£)</string>
+    <string name="payment_type_string">Payment Type</string>
+    <string name="status_string">Status</string>
+    <string name="order_type_string">Order Type</string>
+    <string name="card_string">Card</string>
+    <string name="cash_string">Cash</string>
+    <string name="paypal_string">Paypal</string>
+    <string name="delivery_string">Delivery</string>
+    <string name="collection_string">Collection</string>
+    <string name="dish_name_string">Dish Name</string>
+    <string name="quantity_string">Quantity</string>
+    <string name="to_string">To</string>
+    <string name="select_time_string">Select Time</string>
+    <string name="ok_string">OK</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="select_Date_string">Select Date</string>
+    <string name="start_from">Start From</string>
+    <string name="end_date">End Date</string>
+    <string name="item_string">ITEM:</string>
+    <string name="total_string">TOTAL: £</string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
+     <string name="delete_string">Delete?</string>
+
+</resources>

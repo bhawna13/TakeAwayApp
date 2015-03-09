@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5.5"
+    android:background="@drawable/rounded_rectangle" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/grey"
+        android:gravity="center">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order completed ?"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+        
+         <Button 
+             android:id="@+id/yes_Ordercompleted"
+             android:layout_width="250dp"
+             android:layout_height="70dp"
+             android:background="@drawable/rounded_rectangle_darkgray"
+             android:text="Yes"
+             android:textColor="@color/white"/>
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+         android:gravity="center">
+         <Button 
+              android:id="@+id/No_Ordercompleted"
+             android:layout_width="250dp"
+             android:layout_height="70dp"
+             android:background="@drawable/rounded_rectangle_white"
+              android:text="No"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

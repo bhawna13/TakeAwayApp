@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- enabled and pressed state -->
+    <item android:drawable="@drawable/rounded_rectangle_purple_for_yes_no" android:state_enabled="true" android:state_pressed="true"></item>
+
+    <!-- enabled and focused state -->
+    <item android:drawable="@drawable/rounded_rectangle_purple_for_yes_no" android:state_enabled="true" android:state_focused="true"></item>
+    <item android:drawable="@drawable/purple_stroke_drawable">
+        <!--
+    <shape android:shape="rectangle">
+        <gradient android:angle="270" android:endColor="@android:color/transparent" android:startColor="@color/gray" />
+
+        <corners android:radius="2dp" />
+
+        <stroke android:width="2dp" android:color="@color/purple_OrderStatus_unselected" />
+    </shape>
+        -->
+    </item>
+
+</selector>

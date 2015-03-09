@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/takeaway_icons_2" 
+         android:state_pressed="true"/>
+
+    <!-- enabled and focused state -->
+    <item android:drawable="@drawable/takeaway_icons_2"  android:state_focused="true"/>
+    <item android:drawable="@drawable/take_away_icons_1"
+        />
+
+</selector>

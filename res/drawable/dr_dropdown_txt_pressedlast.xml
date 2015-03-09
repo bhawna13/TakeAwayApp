@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <padding
+        android:bottom="5dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="5dp" />
+
+    <solid android:color="@color/green_dr_dropdown_background" />
+    
+     <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp" />
+
+</shape>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,InefficientWeight,UselessParent" >
+
+    <LinearLayout
+        android:id="@+id/ll_order_item_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dr_listview_height"
+         >
+
+        <RelativeLayout
+            android:id="@+id/tvRelSelected_drOR"
+            style="@style/dr_listview_order_style"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:id="@+id/tvSelected_drOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:src="@drawable/dr_checkbox_selector"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvName_drOR"
+            style="@style/dr_listview_order_style"
+            android:text="Name" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvQuantity_drOR"
+            style="@style/dr_listview_order_style"
+            android:text="Quantity" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvPrice_drOR"
+            style="@style/dr_listview_order_style"
+            android:text="Amount" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="center|right"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:ignore="HardcodedText,DisableBaselineAlignment,ContentDescription,Suspicious0dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:gravity="center|right"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/readyorderitemPart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:orientation="horizontal" >
+
+                <include
+                    android:id="@+id/leftHandSideContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/ready_order_layout" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ChaneorderViewButton"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-15dp"
+                android:layout_weight=".1"
+                android:background="@drawable/left_arrow"
+                android:minHeight="80dp"
+                android:minWidth="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <include
+                android:id="@+id/newOrderreceiptLayout_orderView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9.8"
+                layout="@layout/new_order_receipt_orderview"
+                android:rotation="90" />
+        </LinearLayout>
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5" >
+
+            <include
+                android:id="@+id/bottom_layout_OrderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/order_view_bottom_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrowleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/purple_left_arrow" />
+
+    <ImageView
+        android:id="@+id/arrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/purple_right_arrow" />
+
+    <RelativeLayout
+        android:id="@+id/transparent_forCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_calculatorBackground"
+        android:visibility="invisible" >
+
+        <include
+            android:id="@+id/linear_calculatorLayout"
+            android:layout_width="@dimen/calculator_width"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            layout="@layout/calculator_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

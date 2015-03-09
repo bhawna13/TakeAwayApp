@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription" >
+
+    <LinearLayout
+        android:id="@+id/ll_row_dr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dr_listview_height"
+        android:background="@color/grey_dr_background" >
+
+        <RelativeLayout
+            android:id="@+id/tvRelSelected_drAll"
+            style="@style/dr_listview_style"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:id="@+id/tvSelected_drAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:src="@drawable/dr_checkbox_selector" />
+        </RelativeLayout>
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvTime_drAll"
+            style="@style/dr_listview_style"
+            android:text="@string/time_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvOrderNo_drAll"
+            style="@style/dr_listview_style"
+            android:text="@string/orderno_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvVat_drAll"
+            style="@style/dr_listview_style"
+            android:text="@string/vat_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvAmount_drAll"
+            style="@style/dr_listview_style"
+            android:text="@string/amount_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvPaymentType_drAll"
+            style="@style/dr_listview_style"
+            android:text="@string/payment_type_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvStatus_drAll"
+            style="@style/dr_listview_style"
+            android:text="@string/status_string" />
+
+        <in.websnoox.tappTablet.ui.CustomTextView
+            android:id="@+id/tvOrderType_drAll"
+            style="@style/dr_listview_style"
+            android:text="@string/order_type_string" />
+    </LinearLayout>
+
+</LinearLayout>
